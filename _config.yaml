@@ -26,7 +26,11 @@ plugins:
 # Any file in the `_posts` directory gets a default layout of `post`, 
 # so I don't have to specify it manually
 defaults:
-    - scope:
-        path: _posts
-      values:
-        layout: post
+  - scope:
+      path: _posts
+    values:
+      layout: post
+  - scope:
+      path: "README.md"
+    values:
+      permalink: "index.html"
