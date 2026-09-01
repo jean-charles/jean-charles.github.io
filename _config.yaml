@@ -14,8 +14,8 @@ github_username: jean-charles
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes
-remote_theme: mmistakes/minimal-mistakes@4.28.1
+#theme: minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
