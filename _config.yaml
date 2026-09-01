@@ -1,5 +1,32 @@
+title: JC
+description: My personal page
+baseurl: ""
+url: "https://jean-charles.github.io" 
+#google_analytics: UA-000000000-0
+timezone: Canada/Montréal
+show_excerpts: true # Show excerpts of posts on the home page
+permalink: /:categories/:title # Don't show the date of the post in the URL
+
+# Social
+#twitter_username: nathandench
+github_username: jean-charles
+#linkedin_username: nathandench
+
+# Build settings
+markdown: kramdown
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
-title: JC
-description: My personal page
+theme: cayman
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap # I added this to automatiacally generate a sitemap.xml
+
+# These are default variables for my pages
+# Any file in the `_posts` directory gets a default layout of `post`, 
+# so I don't have to specify it manually
+defaults:
+    - scope:
+        path: _posts
+      values:
+        layout: post
